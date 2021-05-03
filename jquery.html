@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title> jquery </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+    </head>
+    <body>
+        <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        var div = $("div");
+        div.animate({right:'250px', opacity:'0.5'},"slow");
+        div.animate({height: '300px', opacity: '0.4'}, "slow");
+        div.animate({width: '300px', opacity: '0.8'}, "slow");
+        div.animate({height: '100px', opacity: '0.4'}, "slow");
+        div.animate({width: '100px', opacity: '0.8'}, "slow");
+        div.animate({left:'300px', opacity:'0.5'},"slow");
+        });
+        });
+        </script>
+        <button>Start Animation</button>
+
+        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position,
+            remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+            <p>this is paragraph</p>
+            <p>this is paragraph</p>
+            <p>this is paragraph</p>
+        <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+        </div>
+    </body>
+</html>
+
+<!--
+    //mouse events
+    click
+    dblclick
+    muoseenter
+    mousemove
+    mouseleave
+
+    //keyboard event
+    keypress
+    keydown
+    keyup
+
+    //form event
+    submit
+    change
+    focus
+    blur
+
+    //document/window event
+
+    load
+    resize
+    scroll
+    unload
+
+-->
